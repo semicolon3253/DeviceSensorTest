@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="LUX값: "
+            android:textStyle="bold"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/lux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical">
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:textSize="90dp"
+            tools:text="센서없음" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/proxy_1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="조도 센서는 주변의 밝기를 측정 해서 LUX로 반환하는 센서입니다.
+이 센서는 휴대폰 앞면에 전면카메라, 근접센서와 같이 있습니다.
+이 센서는 주변이 어두우면 화면을 어둡게 하고, 밝으면 화면의 밝기를 늘릴떄 씁니다.
+"
+        android:textColor="#ff000000"/>
+
+</LinearLayout>

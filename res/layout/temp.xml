@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="온도: "
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="°C"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/temp_1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="온도센서는 디바이스의 온도를 측정후, 셀시우스 (°C)단위로 반환 합니다.
+이 온도센서는 주변온도가 아니라 내부 하드웨어의 온도를 측정 합니다.
+별로 쓸때가 없어요."
+        android:textColor="#ff000000"/>
+
+</LinearLayout>

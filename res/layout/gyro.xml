@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="X:"
+            android:textStyle="bold"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/gyro_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Y:"
+            android:textStyle="bold"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/gyro_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Z:"
+            android:textStyle="bold"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/gyro_z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#ff000000"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/gyro_1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="자이로스코프 센서는 기기의 회전각을 감지하는 센서입니다.
+3축 자이로스코프 센서는 기기의x, y, z축 회전을 감지합니다. 위의 사진에 xyz축의 방향이 나옵니다.
+이를 이해서 VR기능을 만들수 있습니다. 또한 360도(기존180도가아닌 위아래를 포함)파노라마 사진 촬영이 가능 합니다.
+"
+        />
+
+</LinearLayout>

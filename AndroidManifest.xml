@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edisondl.sensortester">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".accActivity" android:label="기기 센서 테스터- 가속도 센서"></activity>
+        <activity android:name=".proxyActivity" android:label="기기 센서 테스터- 근접 센서"></activity>
+        <activity android:name=".gyroActivity" android:label="기기 센서 테스터- 자이로스코프 센서"></activity>
+        <activity android:name=".lightActivity" android:label="기기 센서 테스터- 빛 센서"></activity>
+        <activity android:name=".magActivity" android:label="기기 센서 테스터- 자기장 센서"></activity>
+        <activity android:name=".orientationActivity" android:label="기기 센서 테스터- 회전 센서"></activity>
+        <activity android:name=".pressActivity" android:label="기기 센서 테스터- 기압 센서"></activity>
+        <activity android:name=".tempActivity" android:label="기기 센서 테스터- 온도 센서"></activity>
+    </application>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

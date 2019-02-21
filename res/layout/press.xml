@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기압: "
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/press"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hPa"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/press_1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="위의 사진은 일반 기압계입니다.
+기압센서는 현재 휴대전화의 기압을 측정 할 수 있는 센서 입니다.
+단위는 헥토파스칼(hPa)를 사용합니다."
+        android:textColor="#ff000000"/>
+
+</LinearLayout>

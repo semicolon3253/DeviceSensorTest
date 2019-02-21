@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="X:"
+            android:textStyle="bold"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/acc_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Y:"
+            android:textStyle="bold"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/acc_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Z:"
+            android:textStyle="bold"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/acc_z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            android:textColor="#ff000000"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#ff000000"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/acc_1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="가속도 센서는 가속도를 측정하는 센서입니다.
+
+3축 가속도 센서는 3차원 공간에서 기기의 x축, y축, z축 세 방향의 가속도를 측정할 수 있습니다.
+
+위의 사진에도 나와 있듯이휴대폰을 세로로 세운후 화면을 보면 가로로X축, 세로로Y축, 그리고 기기의 앞뒤로 z축입니다. 기기를 평면에 눞여 놓으면 z축이 아래쪽을 향하게 됩니다.
+
+이때 가속도 값은 약9가 나옵니다. 이떄 휴대폰의 화면이 바닥을 향하게 하면 -9가 됩니다.
+
+가속도 센서는 이런 식으로 정지된 물체가 향하고 있는 방향을 알아낼 수 있습니다."
+        />
+
+</LinearLayout>
